@@ -1,0 +1,81 @@
+<resources>
+
+    <!--application name-->
+    <string name="app_name">E-Garbage App</string>
+
+    <!--activity main-->
+    <string name="register">Daftar</string>
+    <string name="login">Login</string>
+
+    <!--navigasi menu-->
+    <string name="menu2">Profil</string>
+    <string name="menu3">Saldo</string>
+    <string name="menu4">Tentang</string>
+    <string name="menu5">Keluar</string>
+    <string name="menu6">Riwayat</string>
+    <string name="openDrawer">Drawer dibuka</string>
+    <string name="closeDrawer">Drawer ditutup</string>
+
+
+    <!--activity register-->
+    <string name="name">Nama Lengkap</string>
+    <string name="email">E-mail</string>
+    <string name="hp">No Handphone</string>
+    <string name="alamat">Alamat</string>
+    <string name="password">Password</string>
+    <string name="save">Save</string>
+
+    <!--activity sign kode phone-->
+    <string name="kode">Kode</string>
+    <string name="signin">Sign in</string>
+    <string name="tag_send">send</string>
+    <string name="tag_verify">verify</string>
+
+
+    <!--activity Wallet-->
+    <string name="btn_tukar_point">Tukar Point</string>
+    <string name="title_wallet">Saldo</string>
+    <string name="point">Point</string>
+
+
+    <!--activity single history-->
+    <string name="cash">Cash</string>
+    <string name="saldo">Saldo</string>
+
+    <!--activity history-->
+    <string name="history">Riwayat</string>
+
+
+    <!--jenis sampah-->
+    <string name="sampah_kering">Sampah kering</string>
+    <string name="sampah_basah">Sampah basah</string>
+    <string name="sampah_campuran">Sampah campuran</string>
+
+
+    <!--payment-->
+
+
+    <!--activity map-->
+    <string name="call">Call Driver</string>
+
+    <!--activity profil-->
+    <string name="profil">Profil</string>
+
+
+    <!--about information-->
+    <string name="app_email">member@gmail.com</string>
+
+    <!--google maps api-->
+
+    <string name="google_maps_key2">AIzaSyDS8FN3hsLer3azeaQRhAe5mT6j5sd3sS4</string>
+
+
+
+    <string name="drawer_visibility">@string/drawer_content_on</string>
+    <string name="drawer_content_on">0</string>
+
+
+    <string name="title_activity_member_map">Map</string>
+
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hades.garbage.Register"
+    android:orientation="vertical"
+    android:background="@drawable/greencity"
+    android:weightSum="1">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtUser"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/email" />
+
+            <EditText
+                android:id="@+id/edtPass"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                />
+
+            <TextView
+                android:id="@+id/txt_reset"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Forgot your password?"
+                android:textColor="@color/black_overlay"
+                android:textColorHighlight="@color/black_overlay"
+                android:textColorLink="@color/black_overlay"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_phone_login"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Sign in phone number"
+                android:textColor="@color/black_overlay"
+                android:textColorHighlight="@color/black_overlay"
+                android:textColorLink="@color/black_overlay"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonstylegreen"
+                android:text="@string/login"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btn_Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonstylegreen"
+                android:text="@string/register"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

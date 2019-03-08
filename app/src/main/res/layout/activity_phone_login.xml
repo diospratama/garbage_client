@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phone_login">
+
+    <LinearLayout
+        android:id="@+id/lytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/lytoolbar">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <net.rimoto.intlphoneinput.IntlPhoneInput
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:textSize="14sp"
+                    app:textColor="#000000"
+                    app:flagPaddingEnd="4dp"
+                    app:flagPaddingStart="4dp"
+                    app:flagPaddingTop="4dp"
+                    app:flagPaddingBottom="4dp"
+                    android:id="@+id/my_phone_input" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/verifiedsign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_ok"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtKode"
+                    android:layout_width="139dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/kode"
+                    android:visibility="gone"
+                    android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                    android:ems="10"
+                    android:layout_marginLeft="110dp"
+                    android:inputType="number">
+                </EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:paddingTop="10dp">
+
+
+               <android.support.design.widget.FloatingActionButton
+                   android:id="@+id/btn_SignIn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_margin="20dp"
+                   android:src="@drawable/ic_paper_plane"
+                   android:tag="@string/tag_send" />
+
+               <!--<Button-->
+
+
+                   <!--android:id="@+id/btn_SignIn"-->
+                   <!--android:layout_width="139dp"-->
+                   <!--android:layout_height="wrap_content"-->
+                   <!--android:layout_marginLeft="110dp"-->
+                   <!--android:background="@color/colorPrimary"-->
+                   <!--android:text="@string/signin"-->
+                   <!--android:textColor="@android:color/background_light"-->
+                   <!--android:textStyle="bold"-->
+                   <!--android:tag="@string/tag_send"/>-->
+
+               <TextView
+                   android:id="@+id/txt_timer"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_margin="25sp"
+                   android:clickable="true"
+                   android:textSize="20sp" />
+
+
+
+           </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
